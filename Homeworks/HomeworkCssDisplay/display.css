@@ -1,0 +1,20 @@
+body{
+    margin: 0px;
+}
+.navigation{
+    display: inline-block;
+    background-color: #FFFE55;
+    width: 100%;
+    padding: 10px;
+}
+
+img,.space{
+    vertical-align: middle;
+}
+
+img{
+    height: 40px;
+}
+.space{
+    padding-left: 20px;
+}
