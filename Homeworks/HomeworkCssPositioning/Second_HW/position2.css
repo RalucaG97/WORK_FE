@@ -1,0 +1,41 @@
+.parent,.child{
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.parent{
+    width: 750px;
+    height: 250px;
+    border: 10px #845E74 dotted;
+    background-color: #BBC9B8;
+    position:relative;
+}
+
+.child{
+    width: 300px;
+    height: 200px;
+    border: 5px #845e74 dashed;
+    position: absolute;
+    z-index: 0;
+}
+
+.child1{
+    background-color: #508E8B;
+    top:0;
+    left:0;
+}
+
+.child2{
+    background-color: #A391A4;
+    left: 50%;
+    top: 100%;
+    margin-top: -200px;
+    margin-left: -150px;
+    z-index: 1;
+}
+
+.child3{
+    background-color:#A8A97C;
+    top: 8%;
+    right: 15px;
+}
