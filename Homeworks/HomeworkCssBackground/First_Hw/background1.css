@@ -1,0 +1,14 @@
+.content{
+    width: 650px;
+    height: 400px;
+}
+ 
+.box{
+    width: fit-content;
+    height: fit-content;
+    border: 15px red dotted;
+    padding: 20px;
+    background-image: url(https://www.thesafaricollection.com/wp-content/uploads/2022/07/The-Safari-Collection-Hey-You-Giraffe-Manor-1.jpg);
+    background-repeat: no-repeat;
+    background-clip: content-box;
+}
