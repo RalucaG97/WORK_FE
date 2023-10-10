@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+header{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h2{
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 150;
+}
+
+h4{
+    color:gray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 150;
+}
+
+h5{
+    color:black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:bolder;
+}
+
+p{
+    color:gray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button{
+    border: 1px #BCC8D5 solid;
+    border-radius: 1px;
+    color:#BCC8D5;
+    background-color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.box{
+    width: 300px;
+    height: 500px;
+    border-radius: 5px;
+    box-shadow: 1px 3px 3px #BCC8D5;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.image{
+    background-size: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    flex-grow: 1;
+}
+
+.text{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image1{
+    background-image: url(https://www.watches.com/cdn/shop/files/timex-MK1-chrono-TW2T10900VQ-square-640px_1800x.jpg?v=1636738381);
+}
+
+.image2{
+    background-image: url(https://www.redwoodwatches.com/cdn/shop/files/Recon_Hero_Mobile_x800.jpg?v=1686059598);
+}
+
+.image3{
+    background-image: url(https://chronolink.ro/wp-content/uploads/2022/04/new_2022_watches_day_date_portrait.jpg);
+}
+.image4{
+    background-image: url(https://cdn4.ethoswatches.com/the-watch-guide/wp-content/uploads/2020/10/Masthead-Mobile@2x-3.jpg);
+}
