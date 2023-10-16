@@ -1,0 +1,113 @@
+*{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main{
+    width: 700px;
+    height: 700px;
+    border: 2px black solid;
+    display: grid;
+    grid-template-columns: 50px 300px auto;
+    background-color: black;
+    opacity: 80%;
+    gap: 5px;
+}
+
+.meniu{
+    display: grid;
+    grid-template-rows: 50px auto repeat(5,50px);
+    justify-items: center;
+    align-items: center;
+}
+
+.icon{
+    width: 30px;
+}
+
+.icon:hover{
+    background-color: black;
+    opacity: 50%;
+}
+.profile{
+    grid-row-start: 3;
+}
+
+.files{
+    grid-row-start: 4;
+}
+
+.picture{
+    grid-row-start: 5;
+}
+
+.settings{
+    grid-row-start: 6;
+}
+
+.shutdown{
+    grid-row-start: 7;
+}
+
+.recentlyAdded{
+    display: grid;
+    grid-auto-rows: auto;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.recentlyAdded::-webkit-scrollbar{
+    display: none;
+}
+
+.newAdd{
+    display: grid;
+    grid-auto-rows: 50px;
+}
+
+.blueIcon{
+    width: 30px;
+    height: 30px;
+    background-color: #0078D7;
+}
+
+.iconRow{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.iconRow:hover{
+    filter: brightness(150%);
+}
+
+.apps,.menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.apps{
+    padding-right: 5px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.apps::-webkit-scrollbar{
+    display: none;
+}
+
+.applications{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 110px;
+    gap: 5px;
+}
+
+.card{
+    background-color:#0078D7;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.card:hover{
+    filter: brightness(150%);
+}
