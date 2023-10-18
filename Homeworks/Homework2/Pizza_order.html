@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homework2</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Homework2" />
+        <meta name="keywords" content="Homework2" />
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Pizza Order</legend>
+                <label>Your name:</label>
+                 <!--Numele sa aiba min 3 caractere si max 10-->
+                <input type="text" placeholder="Your name" minlength="3" maxlength="10">
+                <br> <br>
+                <label>Your email:</label>
+                <input type="email" placeholder="Your email">
+                <br> <br>
+                <label>Topping:</label>
+                <input type="radio" name="topping" value="supreme">Supreme</input>
+                <input type="radio" name="topping" value="vegetarian">Vegetarian</input>
+                <input type="radio" name="topping" value="hawaian">Hawaian</input>
+                <br> <br>
+                <label>Sauce:</label>
+                <select>
+                    <option>Pesto</option>
+                    <option selected>Tomato</option><!--Valoare initiala-->
+                    <option>Mayonese</option>
+                </select>
+                <br> <br>
+                <label>Extras:</label>
+                <input type="checkbox" name="extras" value="cheese">Cheese</input>
+                <input type="checkbox" name="extras" value="onions">Onions</input>
+                <input type="checkbox" name="extras" value="olives">Olives</input>
+                <br><br>
+                <!--Adaugati un camp pentru cantitate care sa accepte doar numere (1-7)-->
+                <label>Quantity:</label>
+                <input type="number" min="1" max="7"></input>
+                <br><br>
+                <!--Data livrare-->
+                <label>Delivery date:</label>
+                <input type="date" min="2023-01-01" value="2023-09-25"><!--Valoare initiala-->
+                <br>
+                <p>Delivery instructions:</p>
+                <textarea placeholder="Address, no"></textarea>
+                <br>
+                <!--Comentarii-->
+                <p>Comments:</p>
+                <textarea placeholder="Comments"></textarea>
+                <br> <br>
+                <button type="submit">Send order</button>
+                <!--Buton resetare-->
+                <button type="reset">Reset</button>
+            </fieldset>
+        </form>
+    </body>
+</html>
