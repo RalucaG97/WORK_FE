@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HomeworkCSSSel</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="HomeworkCssSel" />
+        <meta name="keywords" content="HomeworkCssSel" />
+        <link rel="stylesheet" href="pizza.css">
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Pizza Order</legend>
+                <label>Your name:</label>
+                <input type="text" class="Text" placeholder="Your name">
+                <br> <br>
+                <label>Your email:</label>
+                <input type="email" class="Email" placeholder="Your email">
+                <br> <br>
+                <label>Topping:</label>
+                <input type="radio" name="topping" value="supreme">Supreme</input>
+                <input type="radio" name="topping" value="vegetarian">Vegetarian</input>
+                <input type="radio" name="topping" value="hawaian">Hawaian</input>
+                <br> <br>
+                <label>Sauce:</label>
+                <select>
+                    <option>Pesto</option>
+                    <option selected>Tomato</option>
+                    <option>Mayonese</option>
+                </select>
+                <br> <br>
+                <label>Extras:</label>
+                <input type="checkbox" name="extras" value="cheese">Cheese</input>
+                <input type="checkbox" name="extras" value="onions">Onions</input>
+                <input type="checkbox" name="extras" value="olives">Olives</input>
+                <br>
+                <p>Delivery instructions:</p>
+                <textarea class="Text">Delivery</textarea>
+                <br> <br>
+                <button id="Button">Send order</button>
+            </fieldset>
+        </form>
+    </body>
+</html>

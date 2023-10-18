@@ -1,0 +1,23 @@
+label{
+    color:skyblue;
+} /*Label-urile sa aiba culoarea skyblue*/
+
+.Text{
+    border: green 5px solid;
+}/*inputurile de tip text sa aiba border verde*/
+
+.Email{
+    background-color:blue;
+}/*inputurile de tip email sa aiba fundalul albastru*/
+
+#Button{
+    background-color: lightgreen;
+}/*Butonul: verde*/
+
+body{
+    background-color: salmon;
+}/*Background-ul paginii: salmon*/
+
+
+
+
