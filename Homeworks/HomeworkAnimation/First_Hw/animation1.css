@@ -1,0 +1,40 @@
+body{
+    background-color: #22242D;
+}
+
+.animatie{
+    display: flex;
+    height: 100%;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #74F59A;
+    position: relative;
+    animation-name: upDown;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-duration: 0.7s;
+    animation-direction: alternate;
+}
+
+.dot2{
+    animation-delay: 0.20s;
+}
+
+.dot3{
+    animation-delay: 0.40s;
+}
+@keyframes upDown{
+    from{
+        bottom: 0;
+    }
+    to{
+        bottom: 25px;
+    }
+}

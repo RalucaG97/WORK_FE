@@ -1,0 +1,75 @@
+body{
+    height: 95%;
+    background-color: #2D5971;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+.animatie{
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 2.5s;
+}
+
+.title{
+    position: relative;
+    animation-name: wipeup;
+    
+}
+
+.middle{
+    position: relative;
+    animation-name: wipeleft;
+}
+
+.buton{
+    border: 1px white solid;
+    border-radius: 1px;
+    color:white;
+    background-color:transparent;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    opacity: 0%;
+    animation-name: vizibil;
+    animation-duration: 3.5s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes wipeup{
+    from{
+        top:-50%;
+        left: 0px;
+    }
+    to{
+        top:0px;
+        left:0px;
+    }
+}
+
+@keyframes wipeleft{
+    from{
+        left:-100%; 
+        top:0px;
+    }
+    to{
+        left:0px; 
+        top:0px;
+    }
+}
+
+@keyframes vizibil{
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
