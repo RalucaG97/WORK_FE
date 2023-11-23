@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+}
+header{
+    width: 100vw;
+    height: 80vh;
+    background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/1024px-A_black_image.jpg),url(https://wallpapers.com/images/featured/photography-vss4nqivnvgidouh.jpg);
+    background-size: cover;
+    background-blend-mode: soft-light; /*dark overlay*/
+    background-attachment: fixed;
+    position: relative;
+    align-items: center;
+}
+ header:hover{
+    background-image:url(https://wallpapercave.com/wp/wp6717971.jpg),url(https://wallpapers.com/images/featured/photography-vss4nqivnvgidouh.jpg);
+    background-size: cover;
+    background-blend-mode: soft-light;/*red overlay*/
+    background-attachment: fixed;
+ }
+.content{
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+    filter: brightness(100%);
+    position: absolute;
+    top:60%;
+    left:35%;
+}
+
+.text{
+    margin-top: 20px;
+}
+
+.original{
+    width: 100vw;
+    height: 80vh;
+    background-image: url(https://wallpapers.com/images/featured/photography-vss4nqivnvgidouh.jpg);
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
