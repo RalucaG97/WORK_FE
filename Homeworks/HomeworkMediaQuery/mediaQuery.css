@@ -1,0 +1,69 @@
+.app{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.middleSection{
+    display: flex;
+    flex-grow: 1;
+}
+
+.left,.right{
+    flex-grow: 1;
+    padding: 60px;
+}
+
+.left,.right,footer,header,.middle{
+    text-align: center;
+}
+.middle{
+    flex-grow: 3;
+    background-color: cyan;
+    padding: 20px;
+}
+
+.left{
+    background-color: yellow;
+}
+
+.right{
+    background-color: pink;
+}
+
+header{
+    background-color: orange;
+}
+
+footer{
+    background-color: greenyellow;
+}
+
+@media screen and (max-width: 720px) {
+    .middleSection{
+        flex-direction: column;
+    }
+    header{
+        background-color: darkred;
+    }
+    .left{
+        background-color: darkgoldenrod;
+        order:2;
+    }
+    .middle{
+        background-color: darkcyan;
+        order:1;
+    }
+    .right{
+        background-color: darkmagenta;
+        order:2;
+    }
+    footer{
+        background-color: darkolivegreen;
+    }
+}
+
+@media print{
+    *{
+        background-color: white;
+    }
+}
