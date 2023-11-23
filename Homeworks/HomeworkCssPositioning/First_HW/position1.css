@@ -1,0 +1,29 @@
+.box{
+    width: 300px;
+    height: 300px;
+}
+
+.box1{
+    background-color: yellow;
+    position: relative;
+    /*left:50%;
+    top:50vh; /*faceti patratul galben sa porneasca din mijlocul paginii*/
+    /*left:50%;
+    top:50vh;
+    margin-left: -150px;
+    margin-top: -150px;/*mijlocul patratului galben sa fie in mijlocul paginii*/
+}
+
+.box2{
+    background-color: blue;
+    position: absolute;
+    left:50%;
+    top:50%;
+}
+
+.box3{
+    background-color: green;
+    position: absolute;
+    left:50%;
+    top:50%;
+}
