@@ -1,0 +1,10 @@
+@import './buttons';
+@import './colors';
+@import './typography';
+
+html{
+    body{
+        background-color: $black;
+        background-image: url(../assets/background-stars.svg);
+    }
+}
