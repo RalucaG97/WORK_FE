@@ -87,6 +87,17 @@ p {
 }
 
 html body {
+  background: url("../assets/background-stars.svg");
   background-color: rgb(7, 7, 36);
-  background-image: url(../assets/background-stars.svg);
+  background-repeat: repeat-x;
+  animation: backgroundAnimation 20s linear alternate-reverse infinite;
+  overflow: hidden;
+}
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
 }/*# sourceMappingURL=planetStyle.css.map */
