@@ -31,5 +31,5 @@ button{
 }
 
 button:hover{
-    background-color: $darkGray;
+    background-color: rgba($color: $white, $alpha: 0.1)
 }

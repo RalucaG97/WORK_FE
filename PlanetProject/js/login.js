@@ -75,7 +75,7 @@ buttonSignIn.addEventListener("click", (e) => {
   console.log("From current input", accounts);
   if (accounts.username == accountsLocal.username) {
     if (accounts.password == accountsLocal.password) {
-      alert("Yaaaaay, you're redirecting to main page");
+      window.location.href = './main.html';
     } else {
       alert("username or password incorrect");
     }

@@ -22,7 +22,8 @@ function createList(parrent, create){
     const ul = createElement('ul');
     planetList.forEach((elem) => {
       const li =createElement('li');
-      const a=createElement('a',{id:elem.id, href:""});
+      const link = "./planet"+ "?planetId=" + elem.id;
+      const a=createElement('a',{href:link});
       const contTitle=create("h4","", elem.title);
       const contImg=create("img", {src: elem.overviewImg});
       a.appendChild(contImg);
@@ -39,7 +40,7 @@ function createNavBar(parent){
     const logo = createElement("div",{id: "logo" },"");
     const h2 = createElement("h2","","The Planets");
     const search = createSearch();
-    const offAnch = createElement("a",{href:"", class:"off-icon"});
+    const offAnch = createElement("a",{href:"./login.html", class:"off-icon"});
     const offImg = createElement("img", {src: "./assets/power-16.png"});
     offAnch.appendChild(offImg);
     logo.appendChild(h2);

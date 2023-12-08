@@ -1,0 +1,89 @@
+@import './buttons';
+@import './colors';
+@import './typography';
+
+html{
+    body{
+        margin: 0;
+        height: 100vh;
+        .mainBody{
+            background: url('../assets/background-stars.svg');
+            background-color: $black;
+            background-repeat: repeat-x;
+            animation: backgroundAnimation 20s linear alternate-reverse infinite;
+            overflow: hidden;
+            margin: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+    
+            @keyframes backgroundAnimation {
+                0% {
+                    background-position: 0% 0%;
+                }
+                100% {
+                    background-position: 100% 100%;
+                }
+            }
+            nav{
+                margin: 0;
+                height: 85px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 32px;
+                padding-right: 41px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+                box-sizing: border-box;
+                #logo{
+                    text-decoration: none;
+                    h2{
+                        margin: 0;
+                        padding: 0;
+                        font-size: 28px;
+                        letter-spacing: -1.05px;
+                        margin-block-start: 0;
+                        margin-block-end: 0;
+                    }
+                }
+                ul{
+                    display: flex;
+                    padding: 0;
+                    gap: 33px;
+                    align-items: center;
+                    li{
+                       list-style: none;
+                       a{
+                        text-decoration: none;
+                       } 
+                    }
+                }
+            }
+            .main{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                .upper{
+                    display: flex;
+                }
+                .lower{
+                    height: 184px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    gap:30px;
+                    .square{
+                        width: 255px;
+                        height: 128px;
+                        box-sizing: border-box;
+                        border: 1px rgba(255, 255, 255, 0.2) solid;
+                        h4{
+                            opacity: 0.5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

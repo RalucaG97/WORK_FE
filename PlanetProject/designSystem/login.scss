@@ -108,7 +108,7 @@ body {
     font-weight: 800;
   }
   .login-form .group .button:hover {
-    opacity: 60%;
+    background-color: rgba($color: $blueMercury, $alpha: 0.9);
     cursor: pointer;
   }
   

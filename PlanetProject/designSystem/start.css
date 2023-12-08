@@ -86,11 +86,11 @@ p {
   color: rgb(255, 255, 255);
 }
 
-html body {
+body {
   margin: 0;
   height: 100vh;
 }
-html body .mainBody {
+body .mainBody {
   background: url("../assets/background-stars.svg");
   background-color: rgb(7, 7, 36);
   background-repeat: repeat-x;
@@ -100,7 +100,8 @@ html body .mainBody {
   height: 100%;
   display: flex;
   flex-direction: column;
-  flex-grow: auto auto;
+  justify-content: center;
+  align-items: center;
 }
 @keyframes backgroundAnimation {
   0% {
@@ -110,72 +111,10 @@ html body .mainBody {
     background-position: 100% 100%;
   }
 }
-html body .mainBody nav {
-  margin: 0;
-  height: 85px;
+body .mainBody button {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 32px;
-  padding-right: 32px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  box-sizing: border-box;
-}
-html body .mainBody nav #logo h2 {
-  margin: 0;
-  padding: 0;
-  font-size: 28px;
-  letter-spacing: -1.05px;
-  margin-block-start: 0;
-  margin-block-end: 0;
-}
-html body .mainBody nav .search {
-  border: 0px;
-  border-bottom: 2px rgb(56, 56, 79) solid;
-  width: 250px;
-  position: relative;
-  right: 45px;
-  background-color: transparent;
-  font-family: "Spartan";
-  font-size: 11px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 25px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-html body .mainBody nav .search:focus-visible {
-  border: 0px;
-  border-bottom: 2px rgb(255, 255, 255) solid;
-  color: white;
-  outline: -webkit-focus-ring-color;
-}
-html body .mainBody .main {
-  height: 100%;
-}
-html body .mainBody .main .title {
-  text-align: center;
-  margin: 60px;
-}
-html body .mainBody .main .allPlanets ul {
-  display: flex;
-  flex-direction: row;
-  padding: 90px 70px 90px 70px;
-  margin: 0;
-  align-content: baseline;
-  list-style-type: none;
-}
-html body .mainBody .main .allPlanets ul li {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
-html body .mainBody .main .allPlanets ul li a {
-  text-decoration: none;
-  text-align: center;
-}
-html body .mainBody .main .allPlanets ul li a img {
-  width: 50%;
-}/*# sourceMappingURL=mainPage.css.map */
+body .mainBody button:focus {
+  background-color: rgb(65, 158, 187);
+}/*# sourceMappingURL=start.css.map */
