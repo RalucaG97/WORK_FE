@@ -1,0 +1,176 @@
+@import './buttons';
+@import './colors';
+@import './typography';
+
+html{
+    body{
+        margin: 0;
+        height: 100vh;
+        .mainBody{
+            background: url('../assets/background-stars.svg');
+            background-color: $black;
+            background-repeat: repeat-x;
+            animation: backgroundAnimation 20s linear alternate-reverse infinite;
+            overflow: hidden;
+            margin: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+    
+            @keyframes backgroundAnimation {
+                0% {
+                    background-position: 0% 0%;
+                }
+                100% {
+                    background-position: 100% 100%;
+                }
+            }
+            nav{
+                margin: 0;
+                height: 58.43px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 32px;
+                padding-right: 41px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+                box-sizing: border-box;
+                #logo{
+                    text-decoration: none;
+                    h2{
+                        margin: 0;
+                        padding: 0;
+                        font-size: 28px;
+                        letter-spacing: -1.05px;
+                        margin-block-start: 0;
+                        margin-block-end: 0;
+                    }
+                }
+                ul{
+                    display: flex;
+                    padding: 0;
+                    gap: 33px;
+                    align-items: center;
+                    li{
+                       list-style: none;
+                       a{
+                        text-decoration: none;
+                       } 
+                    }
+                }
+            }
+            .main{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+            
+                gap: 30px;
+                margin-left:230px;
+                margin-right:230px;
+                .upper{
+                    height: auto;
+                    display: flex;
+                    justify-content: flex-end;
+                    box-sizing: border-box;
+                    flex-grow: 1;
+                    .left{
+                        display: flex;
+                        align-self: center;
+                        justify-content: center;
+                        flex-grow: 1;
+                        position:relative;
+                        #planet{
+                            animation: upAndDown 3s ease-in-out infinite;
+                        }
+                        #surfaceImg{
+                            width: 112px;
+                            position: absolute;
+                            top:70%;
+                            animation: scaleAnimation 2s ease-in-out;
+                        }
+
+                        @keyframes scaleAnimation {
+                            0%{
+                              transform: scale(0); /* Initial and final size */
+                            }
+                            50% {
+                              transform: scale(1.2); /* Middle size, adjust the scale factor */
+                            }
+                            100%{
+                              transform: scale(1)
+                            }
+                          }
+                        @keyframes upAndDown {
+                            0%, 100% {
+                              transform: translateY(0); /* Initial and final position */
+                            }
+                            50% {
+                              transform: translateY(-20px); /* Middle position, adjust the distance */
+                            }
+                          }
+                    }
+                    .right{
+                        width: 350px;
+                        box-sizing: border-box;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        h1{
+                            flex-grow: 1;
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+                        }
+                        p{
+                            flex-grow: 1;
+                            margin: 0;
+                        }   
+                        .source{
+                            height: 35px;
+                            display: flex;
+                            font-family: 'Spartan';
+                            font-size: small;
+                            color:rgba(255, 255, 255, 0.5);
+                            #link{
+                                color:rgba(255, 255, 255, 0.5);
+                                font-weight: bolder;
+                            }
+                        }
+                        .list{
+                            display: flex;
+                            flex-direction: column;
+                            gap:9px;
+                        }
+                    }
+                }
+                .lower{
+                    
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding-bottom: 20px;
+                    .square{
+                        width: 220px;
+                        height: 110px;
+                        box-sizing: border-box;
+                        border: 1px rgba(255, 255, 255, 0.2) solid;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        h4{
+                            opacity: 0.5;
+                            padding-left:23px;
+                            margin: 0;
+                        }
+                        h2{
+                            margin: 0;
+                            padding-top:10px;
+                            padding-left:23px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

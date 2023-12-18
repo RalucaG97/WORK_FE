@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan&display=swap");
+button {
+  font-family: "Spartan";
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 25px;
+  letter-spacing: 2.6px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  height: 48px;
+  width: 350px;
+  background-color: transparent;
+  border: 1px solid rgb(56, 56, 79);
+  display: flex;
+  list-style-type: decimal;
+}
+button .index {
+  color: rgb(255, 255, 255);
+  opacity: 50%;
+  margin-left: 28px;
+  margin-right: 28px;
+  margin-top: 12px;
+  margin-bottom: 11px;
+}
+button .buttonName {
+  color: rgb(255, 255, 255);
+  margin-right: 28px;
+  margin-top: 12px;
+  margin-bottom: 11px;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Antonio";
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 71px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+h2 {
+  font-family: "Antonio";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 35.75px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+h3 {
+  font-family: "Spartan";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+h4 {
+  font-family: "Spartan";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+p {
+  font-family: "Spartan";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 17px;
+  color: rgb(255, 255, 255);
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+}
+body .mainBody {
+  background: url("../assets/background-stars.svg");
+  background-color: rgb(7, 7, 36);
+  background-repeat: repeat-x;
+  animation: backgroundAnimation 20s linear alternate-reverse infinite;
+  overflow: hidden;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+body .mainBody button {
+  display: flex;
+  justify-content: center;
+}
+body .mainBody button:focus {
+  background-color: rgb(65, 158, 187);
+}/*# sourceMappingURL=start.css.map */

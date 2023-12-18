@@ -1,0 +1,36 @@
+@import './colors';
+
+button{
+    font-family: 'Spartan';
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 2.6px;
+    text-transform: uppercase;
+    color:$white;
+    height: 48px;
+    width: 350px;
+    background-color: transparent;
+    border: 1px solid $darkGray;
+    display: flex;
+    list-style-type: decimal;
+
+    .index{
+        color:$white;
+        opacity: 50%;
+        margin-left:28px;
+        margin-right:28px;
+        margin-top: 12px;
+        margin-bottom: 11px;
+    }
+    .buttonName{
+        color:$white;
+        margin-right:28px;
+        margin-top: 12px;
+        margin-bottom: 11px;
+    }
+}
+
+button:hover{
+    background-color: rgba($color: $white, $alpha: 0.1)
+}

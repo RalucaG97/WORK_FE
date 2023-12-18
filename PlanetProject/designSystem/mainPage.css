@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan&display=swap");
+button {
+  font-family: "Spartan";
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 25px;
+  letter-spacing: 2.6px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  height: 48px;
+  width: 350px;
+  background-color: transparent;
+  border: 1px solid rgb(56, 56, 79);
+  display: flex;
+  list-style-type: decimal;
+}
+button .index {
+  color: rgb(255, 255, 255);
+  opacity: 50%;
+  margin-left: 28px;
+  margin-right: 28px;
+  margin-top: 12px;
+  margin-bottom: 11px;
+}
+button .buttonName {
+  color: rgb(255, 255, 255);
+  margin-right: 28px;
+  margin-top: 12px;
+  margin-bottom: 11px;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Antonio";
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 71px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+h2 {
+  font-family: "Antonio";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 35.75px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+h3 {
+  font-family: "Spartan";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+h4 {
+  font-family: "Spartan";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+p {
+  font-family: "Spartan";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 17px;
+  color: rgb(255, 255, 255);
+}
+
+html body {
+  margin: 0;
+  height: 100vh;
+}
+html body .mainBody {
+  background: url("../assets/background-stars.svg");
+  background-color: rgb(7, 7, 36);
+  background-repeat: repeat-x;
+  animation: backgroundAnimation 20s linear alternate-reverse infinite;
+  overflow: hidden;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: auto auto;
+}
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+html body .mainBody nav {
+  margin: 0;
+  height: 58.43px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+}
+html body .mainBody nav #logo h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 28px;
+  letter-spacing: -1.05px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+html body .mainBody nav .search {
+  border: 0px;
+  border-bottom: 2px rgb(56, 56, 79) solid;
+  width: 250px;
+  position: relative;
+  right: 45px;
+  background-color: transparent;
+  font-family: "Spartan";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+html body .mainBody nav .search:focus-visible {
+  border: 0px;
+  border-bottom: 2px rgb(255, 255, 255) solid;
+  color: white;
+  outline: -webkit-focus-ring-color;
+}
+html body .mainBody .main {
+  height: 100%;
+}
+html body .mainBody .main .title {
+  text-align: center;
+  margin: 60px;
+}
+html body .mainBody .main .allPlanets ul {
+  display: flex;
+  flex-direction: row;
+  padding: 90px 70px 90px 70px;
+  margin: 0;
+  align-content: baseline;
+  justify-content: center;
+  list-style-type: none;
+}
+html body .mainBody .main .allPlanets ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+html body .mainBody .main .allPlanets ul li a {
+  text-decoration: none;
+  text-align: center;
+}
+html body .mainBody .main .allPlanets ul li a img {
+  width: 50%;
+}
+html body .mainBody .main .allPlanets ul .Mercury {
+  animation: upAndDown 3s ease-in-out infinite;
+}
+html body .mainBody .main .allPlanets ul .Venus {
+  animation: upAndDown 3.5s ease-in-out infinite;
+}
+html body .mainBody .main .allPlanets ul .Earth {
+  animation: upAndDown 4s ease-in-out infinite;
+}
+html body .mainBody .main .allPlanets ul .Mars {
+  animation: upAndDown 3.5s ease-in-out infinite;
+}
+html body .mainBody .main .allPlanets ul .Jupiter {
+  animation: upAndDown 7s ease-in-out infinite;
+}
+html body .mainBody .main .allPlanets ul .Saturn {
+  animation: upAndDown 6.5s ease-in-out infinite;
+}
+html body .mainBody .main .allPlanets ul .Uranus {
+  animation: upAndDown 5.5s ease-in-out infinite;
+}
+html body .mainBody .main .allPlanets ul .Neptune {
+  animation: upAndDown 5s ease-in-out infinite;
+}
+@keyframes upAndDown {
+  0%, 100% {
+    transform: translateY(0); /* Initial and final position */
+  }
+  50% {
+    transform: translateY(-20px); /* Middle position, adjust the distance */
+  }
+}/*# sourceMappingURL=mainPage.css.map */

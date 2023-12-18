@@ -1,0 +1,37 @@
+@import 'buttons';
+@import 'colors';
+@import 'typography';
+
+body{
+    margin: 0;
+    height: 100vh;
+    .mainBody{
+        background: url('../assets/background-stars.svg');
+        background-color: $black;
+        background-repeat: repeat-x;
+        animation: backgroundAnimation 20s linear alternate-reverse infinite;
+        overflow: hidden;
+        margin: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @keyframes backgroundAnimation {
+            0% {
+                background-position: 0% 0%;
+            }
+            100% {
+                background-position: 100% 100%;
+            }
+        }
+        button{
+            display: flex;
+            justify-content: center;
+        }
+        button:focus{
+            background-color: $blueMercury;
+        }
+    }
+}
