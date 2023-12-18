@@ -28,7 +28,7 @@ html{
             }
             nav{
                 margin: 0;
-                height: 85px;
+                height: 58.43px;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -82,6 +82,7 @@ html{
                         padding: 90px 70px 90px 70px;
                         margin: 0;
                         align-content: baseline;
+                        justify-content: center;
                         list-style-type:none;
                         li{
                             display: flex;
@@ -96,6 +97,38 @@ html{
                                 }
                             }
                         }
+                        .Mercury{
+                            animation: upAndDown 3s ease-in-out infinite;
+                        }
+                        .Venus{
+                            animation: upAndDown 3.5s ease-in-out infinite;
+                        }
+                        .Earth{
+                            animation: upAndDown 4s ease-in-out infinite;
+                        }
+                        .Mars{
+                            animation: upAndDown 3.5s ease-in-out infinite;
+                        }
+                        .Jupiter{
+                            animation: upAndDown 7s ease-in-out infinite;
+                        }
+                        .Saturn{
+                            animation: upAndDown 6.5s ease-in-out infinite;
+                        }
+                        .Uranus{
+                            animation: upAndDown 5.5s ease-in-out infinite;
+                        }
+                        .Neptune{
+                            animation: upAndDown 5s ease-in-out infinite;
+                        }
+                        @keyframes upAndDown {
+                            0%, 100% {
+                              transform: translateY(0); /* Initial and final position */
+                            }
+                            50% {
+                              transform: translateY(-20px); /* Middle position, adjust the distance */
+                            }
+                          }
                     }
                 }
 

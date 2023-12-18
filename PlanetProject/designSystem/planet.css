@@ -13,6 +13,7 @@ button {
   background-color: transparent;
   border: 1px solid rgb(56, 56, 79);
   display: flex;
+  list-style-type: decimal;
 }
 button .index {
   color: rgb(255, 255, 255);
@@ -36,53 +37,53 @@ button:hover {
 h1 {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: "Antonio";
-  font-size: 80px;
+  font-size: 70px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 103px;
+  font-weight: 300;
+  line-height: 71px;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
 }
 
 h2 {
   font-family: "Antonio";
-  font-size: 40px;
+  font-size: 35px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 52px;
-  letter-spacing: -1.5px;
+  font-weight: 300;
+  line-height: 35.75px;
+  letter-spacing: -1px;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
 }
 
 h3 {
   font-family: "Spartan";
-  font-size: 12px;
+  font-size: 11px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 25px;
-  letter-spacing: 2.6px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 1.7px;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
 }
 
 h4 {
   font-family: "Spartan";
-  font-size: 11px;
+  font-size: 10px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 25px;
-  letter-spacing: 1px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0.75px;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
 }
 
 p {
   font-family: "Spartan";
-  font-size: 14px;
+  font-size: 13px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 25px;
+  font-weight: 300;
+  line-height: 17px;
   color: rgb(255, 255, 255);
 }
 
@@ -111,7 +112,7 @@ html body .mainBody {
 }
 html body .mainBody nav {
   margin: 0;
-  height: 85px;
+  height: 58.43px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -148,23 +149,107 @@ html body .mainBody .main {
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
+  gap: 30px;
+  margin-left: 230px;
+  margin-right: 230px;
 }
 html body .mainBody .main .upper {
+  height: auto;
   display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  flex-grow: 1;
+}
+html body .mainBody .main .upper .left {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  flex-grow: 1;
+  position: relative;
+}
+html body .mainBody .main .upper .left #planet {
+  animation: upAndDown 3s ease-in-out infinite;
+}
+html body .mainBody .main .upper .left #surfaceImg {
+  width: 112px;
+  position: absolute;
+  top: 70%;
+  animation: scaleAnimation 2s ease-in-out;
+}
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(0); /* Initial and final size */
+  }
+  50% {
+    transform: scale(1.2); /* Middle size, adjust the scale factor */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes upAndDown {
+  0%, 100% {
+    transform: translateY(0); /* Initial and final position */
+  }
+  50% {
+    transform: translateY(-20px); /* Middle position, adjust the distance */
+  }
+}
+html body .mainBody .main .upper .right {
+  width: 350px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+html body .mainBody .main .upper .right h1 {
+  flex-grow: 1;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+html body .mainBody .main .upper .right p {
+  flex-grow: 1;
+  margin: 0;
+}
+html body .mainBody .main .upper .right .source {
+  height: 35px;
+  display: flex;
+  font-family: "Spartan";
+  font-size: small;
+  color: rgba(255, 255, 255, 0.5);
+}
+html body .mainBody .main .upper .right .source #link {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: bolder;
+}
+html body .mainBody .main .upper .right .list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
 }
 html body .mainBody .main .lower {
-  height: 184px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  gap: 30px;
+  justify-content: space-between;
+  padding-bottom: 20px;
 }
 html body .mainBody .main .lower .square {
-  width: 255px;
-  height: 128px;
+  width: 220px;
+  height: 110px;
   box-sizing: border-box;
   border: 1px rgba(255, 255, 255, 0.2) solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 html body .mainBody .main .lower .square h4 {
   opacity: 0.5;
+  padding-left: 23px;
+  margin: 0;
+}
+html body .mainBody .main .lower .square h2 {
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 23px;
 }/*# sourceMappingURL=planet.css.map */

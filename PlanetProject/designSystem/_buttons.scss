@@ -13,6 +13,7 @@ button{
     background-color: transparent;
     border: 1px solid $darkGray;
     display: flex;
+    list-style-type: decimal;
 
     .index{
         color:$white;

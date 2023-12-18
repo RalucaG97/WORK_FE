@@ -18,10 +18,10 @@ function createElement(tagName, attributes, textContent) {
     return element;
   }
 
-function createList(parrent, create){
+function createList(parrent, create,list){
     const ul = createElement('ul');
-    planetList.forEach((elem) => {
-      const li =createElement('li');
+    list.forEach((elem) => {
+      const li =createElement('li',{class:elem.title, id:elem.id});
       const link = "./planet"+ "?planetId=" + elem.id;
       const a=createElement('a',{href:link});
       const contTitle=create("h4","", elem.title);
@@ -36,7 +36,6 @@ function createList(parrent, create){
 
 function createNavBar(parent){
     const navigation = document.createElement('nav');
-    const ul = createElement("ul");
     const logo = createElement("div",{id: "logo" },"");
     const h2 = createElement("h2","","The Planets");
     const search = createSearch();
@@ -51,8 +50,16 @@ function createNavBar(parent){
 }
 
 function createSearch(){
-    const search = createElement("input",{type:"search", class:"search", placeholder:"Search..."},"");
+    const search = createElement("input",{type:"search", class:"search", id:"search", placeholder:"Search..."},"");
     return search;
+}
+
+function search(searchValue){
+  const filterList = planetList.filter((element)=>{
+    const toLowerCase =element.title.toLowerCase();
+    return toLowerCase.includes(searchValue)
+  })
+  createList(planets,createElement,filterList);
 }
 
 const mainBody = createElement("div", {class: "mainBody"});
@@ -63,7 +70,14 @@ document.body.appendChild(mainBody);
 const main = createElement("div",{class:"main"});
 const title = createElement("h2",{class:"title"},"The solar sistem");
 const planets = createElement("div",{class:"allPlanets"});
-createList(planets,createElement);
+createList(planets,createElement,planetList);
 main.appendChild(title);
 main.appendChild(planets);
 mainBody.appendChild(main);
+
+const searchInput = document.getElementById("search");
+searchInput.addEventListener('input',(event)=>{
+  const ul= document.querySelector("ul");
+  ul.remove();
+  search(event.target.value.toLowerCase());
+})

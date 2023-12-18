@@ -13,6 +13,7 @@ button {
   background-color: transparent;
   border: 1px solid rgb(56, 56, 79);
   display: flex;
+  list-style-type: decimal;
 }
 button .index {
   color: rgb(255, 255, 255);
@@ -36,53 +37,53 @@ button:hover {
 h1 {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: "Antonio";
-  font-size: 80px;
+  font-size: 70px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 103px;
+  font-weight: 300;
+  line-height: 71px;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
 }
 
 h2 {
   font-family: "Antonio";
-  font-size: 40px;
+  font-size: 35px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 52px;
-  letter-spacing: -1.5px;
+  font-weight: 300;
+  line-height: 35.75px;
+  letter-spacing: -1px;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
 }
 
 h3 {
   font-family: "Spartan";
-  font-size: 12px;
+  font-size: 11px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 25px;
-  letter-spacing: 2.6px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 1.7px;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
 }
 
 h4 {
   font-family: "Spartan";
-  font-size: 11px;
+  font-size: 10px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 25px;
-  letter-spacing: 1px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0.75px;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
 }
 
 p {
   font-family: "Spartan";
-  font-size: 14px;
+  font-size: 13px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 25px;
+  font-weight: 300;
+  line-height: 17px;
   color: rgb(255, 255, 255);
 }
 
@@ -112,7 +113,7 @@ html body .mainBody {
 }
 html body .mainBody nav {
   margin: 0;
-  height: 85px;
+  height: 58.43px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -164,6 +165,7 @@ html body .mainBody .main .allPlanets ul {
   padding: 90px 70px 90px 70px;
   margin: 0;
   align-content: baseline;
+  justify-content: center;
   list-style-type: none;
 }
 html body .mainBody .main .allPlanets ul li {
@@ -178,4 +180,36 @@ html body .mainBody .main .allPlanets ul li a {
 }
 html body .mainBody .main .allPlanets ul li a img {
   width: 50%;
+}
+html body .mainBody .main .allPlanets ul .Mercury {
+  animation: upAndDown 3s ease-in-out infinite;
+}
+html body .mainBody .main .allPlanets ul .Venus {
+  animation: upAndDown 3.5s ease-in-out infinite;
+}
+html body .mainBody .main .allPlanets ul .Earth {
+  animation: upAndDown 4s ease-in-out infinite;
+}
+html body .mainBody .main .allPlanets ul .Mars {
+  animation: upAndDown 3.5s ease-in-out infinite;
+}
+html body .mainBody .main .allPlanets ul .Jupiter {
+  animation: upAndDown 7s ease-in-out infinite;
+}
+html body .mainBody .main .allPlanets ul .Saturn {
+  animation: upAndDown 6.5s ease-in-out infinite;
+}
+html body .mainBody .main .allPlanets ul .Uranus {
+  animation: upAndDown 5.5s ease-in-out infinite;
+}
+html body .mainBody .main .allPlanets ul .Neptune {
+  animation: upAndDown 5s ease-in-out infinite;
+}
+@keyframes upAndDown {
+  0%, 100% {
+    transform: translateY(0); /* Initial and final position */
+  }
+  50% {
+    transform: translateY(-20px); /* Middle position, adjust the distance */
+  }
 }/*# sourceMappingURL=mainPage.css.map */
